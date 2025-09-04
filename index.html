@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Barbie Movies Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", Arial, sans-serif;
+      background: url('https://i.pinimg.com/1200x/8f/48/0d/8f480d7b932361d450f898851e3f2c44.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #000; /* Black font */
+    }
+
+    .header {
+      text-align: center;
+      padding: 20px;
+      font-size: 36px;
+      font-family: 'Brush Script MT', cursive;
+      font-weight: bold;
+      margin-top: 40px;
+      color: #000; /* Black font */
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 160px);
+      grid-template-rows: repeat(3, 220px);
+      gap: 0;
+      margin-top: 30px;
+      background: transparent;
+    }
+
+    .frame {
+      border: 2px solid #fff; /* White border */
+      padding: 4px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Positions */
+    .s1 { grid-column: 1; grid-row: 1; }
+    .s2 { grid-column: 2; grid-row: 1; }
+    .s3 { grid-column: 3; grid-row: 1; }
+    .s4 { grid-column: 4; grid-row: 1; }
+
+    .s5 { grid-column: 1; grid-row: 2; }
+    .s6 { grid-column: 2; grid-row: 2; }
+    .s7 { grid-column: 1; grid-row: 3; }
+    .s8 { grid-column: 2; grid-row: 3; }
+
+    .big { grid-column: 3 / 5; grid-row: 2 / 4; }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    💗 Barbie Movies Collection 💗
+  </div>
+
+  <div class="gallery">
+    <div class="frame s1"><img src="https://i.pinimg.com/1200x/bd/ed/30/bded30702e455c5f69904cb8ee3f51a2.jpg" alt="Poster 1"></div>
+    <div class="frame s2"><img src="https://i.pinimg.com/1200x/1c/f9/f2/1cf9f2f25a3e5b0ba87a62384861cc8b.jpg" alt="Poster 2"></div>
+    <div class="frame s3"><img src="https://i.pinimg.com/736x/17/5b/96/175b96bf700716a8dd2f07c6a2f29682.jpg" alt="Poster 3"></div>
+    <div class="frame s4"><img src="https://i.pinimg.com/736x/81/b5/0c/81b50c25c4bdd1975eb8b9f0a3405395.jpg" alt="Poster 4"></div>
+    <div class="frame s5"><img src="https://i.pinimg.com/1200x/e7/f3/d6/e7f3d6ddf224817405144b7df998988e.jpg" alt="Poster 5"></div>
+    <div class="frame s6"><img src="https://i.pinimg.com/1200x/da/d2/b8/dad2b8444b487e401dd436b0667c2556.jpg" alt="Poster 6"></div>
+    <div class="frame s7"><img src="https://i.pinimg.com/1200x/e4/f2/98/e4f2989cd4e816f3b7e803e57a9feb74.jpg" alt="Poster 7"></div>
+    <div class="frame s8"><img src="https://i.pinimg.com/736x/68/43/95/6843952b7aed478306e68625d5b6d3f0.jpg" alt="Poster 8"></div>
+    <div class="frame big"><img src="https://i.pinimg.com/736x/4b/b9/b2/4bb9b2fa58f1c51688774cbd42c901de.jpg" alt="Big Poster"></div>
+  </div>
+
+</body>
+</html>
